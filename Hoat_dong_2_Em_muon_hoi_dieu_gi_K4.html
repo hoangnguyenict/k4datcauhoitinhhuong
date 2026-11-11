@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hoạt động 2 – Em muốn hỏi điều gì? | AI K4</title>
+<style>
+:root{--ink:#20344b;--muted:#63748b;--border:#dce6ef;--blue:#356bd2;--bg:#f3f7fc;--green:#167044;--greenbg:#e5f7e9;--red:#b6293a;--redbg:#ffe7e9}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);line-height:1.6}
+.page{max-width:1060px;margin:30px auto 60px;background:white;border:1px solid #e0e9f3;border-radius:24px;box-shadow:0 14px 50px #31508013;overflow:hidden}
+.top{padding:30px 36px 25px;background:linear-gradient(120deg,#eaf3ff,#f8fcff);border-bottom:1px solid #dbe9f7}
+.eyebrow{font-size:12px;letter-spacing:.1em;font-weight:800;text-transform:uppercase;color:#496b9c;margin:0 0 7px}
+h1{font-size:clamp(25px,3vw,35px);margin:0;line-height:1.22;letter-spacing:-.025em;color:#17365e}
+.subtitle{font-size:14px;color:#516d8d;margin:10px 0 0}.credit{font-size:12px;color:#5e7490;margin-top:9px;font-weight:650}
+main{padding:27px 36px 35px}.identity{display:grid;grid-template-columns:1.4fr .65fr .8fr;gap:12px;margin-bottom:24px}
+.field label{display:block;font-size:13px;font-weight:800;margin-bottom:6px;color:#384c63}.field input{width:100%;height:43px;border:1.5px solid var(--border);border-radius:11px;padding:10px 12px;font:inherit;font-size:15px;color:var(--ink);background:#fff}
+.field input:focus,textarea:focus{outline:none;border-color:#5e94e9;box-shadow:0 0 0 3px #ddebff}
+.section-title{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:800;margin:0 0 13px}.section-num{height:31px;width:31px;border-radius:9px;background:#e8f0ff;color:#2d65c6;display:inline-grid;place-items:center;font-size:16px}
+.scenario{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:20px;border:1px solid #dce8ef;border-radius:18px;padding:21px 23px;background:#fcfeff;align-items:center}
+.scenario p{margin:0;font-size:17px;line-height:1.9}.good,.bad{font-weight:800;border-radius:5px;padding:2px 4px;box-decoration-break:clone;-webkit-box-decoration-break:clone}.good{background:var(--greenbg);color:var(--green)}.bad{background:var(--redbg);color:var(--red)}
+.robot-wrap{align-self:center;text-align:center}.robot-wrap svg{max-width:100%;height:auto;display:block}.robot-label{font-size:11px;font-weight:700;color:#7190ae;margin:-5px 0 0}
+.task{margin-top:26px}.prompt{font-size:16px;margin:0 0 12px}.tip{display:flex;align-items:flex-start;gap:9px;background:#fff9ec;border:1px solid #f1dfb1;border-radius:12px;padding:10px 14px;font-size:14px;color:#64512a;margin-bottom:20px}.tip strong{color:#654d0a}
+.question-list{display:grid;gap:13px}.question{border:1px solid var(--border);border-radius:15px;padding:15px 17px;background:#fff;box-shadow:0 2px 6px #17345306}.q-title{display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:800;margin-bottom:9px}.q-title small{font-weight:500;color:#8292a6}.question textarea{resize:none;overflow:hidden;display:block;width:100%;min-height:74px;padding:13px 14px;border:1.5px solid #dbe4ef;border-radius:11px;background:#fbfdff;font:inherit;font-size:16px;line-height:1.6;color:var(--ink);word-break:break-word}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px;justify-content:space-between;align-items:center}.left{display:flex;gap:9px;flex-wrap:wrap}button{font:inherit;cursor:pointer;font-weight:750;border-radius:11px;padding:11px 17px;border:1px solid transparent;transition:background .15s,transform .15s}button:active{transform:translateY(1px)}button:focus-visible{outline:3px solid #a7c8ff;outline-offset:2px}.outline{background:#f9fbff;border-color:#cbd9eb;color:#285a9a}.outline:hover{background:#eef4ff}.outline:disabled{opacity:.4;cursor:not-allowed}.primary{background:#2e6ad5;color:#fff;box-shadow:0 4px 13px #2e6ad529}.primary:hover{background:#205abd}.mini-note{font-size:12px;color:#7b8da0;margin:12px 0 0}footer{border-top:1px solid #e9eef4;padding:14px 36px;color:#7c8ba0;font-size:12px;text-align:center}
+@media(max-width:700px){.page{margin:0;border:0;border-radius:0}.top{padding:24px 20px}.identity{grid-template-columns:1fr 1fr}.identity .field:first-child{grid-column:1/-1}main{padding:23px 19px}.scenario{grid-template-columns:1fr;padding:17px}.robot-wrap{width:135px;justify-self:center;grid-row:1}.scenario p{font-size:15px}.controls{align-items:stretch}.controls>.primary{width:100%}footer{padding:15px}}
+@media print{body{background:white}.page{margin:0;border:0;box-shadow:none}.controls{display:none}}
+</style>
+</head>
+<body>
+<div class="page" id="page">
+<header class="top">
+<p class="eyebrow">AI KHỐI 4 · TIẾT 1 · HOẠT ĐỘNG 2</p>
+<h1>EM MUỐN HỎI ĐIỀU GÌ?</h1>
+<p class="subtitle">Tính toàn diện · Toàn cầu hóa · Phát triển bền vững</p>
+<div class="credit">Thiết kế: Hoangntm2 - VSC Tih Times City</div>
+</header>
+<main>
+<div class="identity">
+<div class="field"><label for="student">Họ và tên học sinh</label><input id="student" autocomplete="name" placeholder="Nhập họ và tên"></div>
+<div class="field"><label for="className">Lớp</label><input id="className" placeholder="Ví dụ: 4A1"></div>
+<div class="field"><label for="workDate">Ngày làm bài</label><input id="workDate" type="date"></div>
+</div>
+<section aria-labelledby="scenario-heading">
+<h2 id="scenario-heading" class="section-title"><span class="section-num">1</span>Tình huống khám phá</h2>
+<div class="scenario">
+<p>Trường em sử dụng một robot AI để hỗ trợ học sinh. Robot có thể <span class="good">hướng dẫn bài học bằng nhiều ngôn ngữ</span>, <span class="good">giúp các bạn ở nước ngoài cùng tham gia hoạt động trực tuyến</span> và <span class="good">nhắc nhở tắt các thiết bị điện khi không sử dụng</span>.<br><br>Tuy nhiên, robot <span class="bad">chỉ hiểu một số ngôn ngữ</span> và <span class="bad">đôi khi không nhận ra lớp học đã hết người</span>.</p>
+<div class="robot-wrap" aria-hidden="true">
+<svg viewBox="0 0 220 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Robot AI chibi dễ thương">
+<ellipse cx="110" cy="226" rx="78" ry="10" fill="#dbe7f6"/>
+<path d="M110 50V29" stroke="#6b8db9" stroke-width="8" stroke-linecap="round"/><circle cx="110" cy="23" r="11" fill="#f4b95d" stroke="#7295bf" stroke-width="4"/>
+<rect x="32" y="53" width="156" height="120" rx="42" fill="#91bce7" stroke="#6e9fce" stroke-width="5"/>
+<rect x="45" y="67" width="130" height="90" rx="29" fill="#f9fdff"/>
+<ellipse cx="81" cy="111" rx="9" ry="14" fill="#315783"/><ellipse cx="139" cy="111" rx="9" ry="14" fill="#315783"/>
+<circle cx="73" cy="128" r="11" fill="#fbc4ca" opacity=".8"/><circle cx="147" cy="128" r="11" fill="#fbc4ca" opacity=".8"/>
+<path d="M94 133Q110 148 126 133" fill="none" stroke="#315783" stroke-width="5" stroke-linecap="round"/>
+<rect x="63" y="173" width="94" height="55" rx="24" fill="#93bfe9" stroke="#6e9fce" stroke-width="5"/>
+<rect x="88" y="186" width="44" height="23" rx="12" fill="#f6faff"/><path d="M103 198h14" stroke="#63a6df" stroke-width="4" stroke-linecap="round"/>
+<path d="M63 187l-20 22M157 187l20 22" stroke="#7ea8d3" stroke-width="13" stroke-linecap="round"/>
+<circle cx="39" cy="213" r="10" fill="#bddaf0"/><circle cx="181" cy="213" r="10" fill="#bddaf0"/>
+<path d="M91 224v11M129 224v11" stroke="#699bc9" stroke-width="11" stroke-linecap="round"/>
+<path d="M28 76l-8 -5M192 76l8 -5" stroke="#f3c56d" stroke-width="5" stroke-linecap="round"/>
+</svg>
+<p class="robot-label">Robot AI hỗ trợ học tập</p>
+</div>
+</div>
+</section>
+<section class="task" aria-labelledby="task-heading">
+<h2 id="task-heading" class="section-title"><span class="section-num">2</span>Nhiệm vụ học tập</h2>
+<p class="prompt"><strong>Đọc tình huống và đặt ít nhất 2 câu hỏi</strong> về những điều con muốn tìm hiểu thêm.</p>
+<div class="tip"><span aria-hidden="true">💡</span><span><strong>Gợi ý:</strong> Ưu tiên đặt câu hỏi bắt đầu bằng <strong>“Vì sao...?”</strong>, <strong>“Làm thế nào...?”</strong>, <strong>“Điều gì sẽ xảy ra nếu...?”</strong></span></div>
+<div id="questionList" class="question-list" aria-live="polite"></div>
+<div class="controls"><div class="left"><button class="outline" id="addBtn" type="button">＋ Thêm ô câu hỏi</button><button class="outline" id="removeBtn" type="button">－ Bớt ô câu hỏi</button></div><button class="primary" id="downloadBtn" type="button">⬇ Tải câu hỏi .png</button></div>
+<p class="mini-note">Ảnh PNG sẽ chứa toàn bộ tình huống, câu hỏi và thông tin học sinh. Nội dung tự xuống dòng và ô tự mở rộng theo câu trả lời.</p>
+</section>
+</main>
+<footer>Thiết kế: Hoangntm2 - VSC Tih Times City</footer>
+</div>
+<script>
+(()=>{'use strict';
+const STORAGE='ai_k4_hd2_questions_v1';
+const student=document.getElementById('student'),className=document.getElementById('className'),workDate=document.getElementById('workDate'),list=document.getElementById('questionList');
+const addBtn=document.getElementById('addBtn'),removeBtn=document.getElementById('removeBtn');
+const today=()=>{const d=new Date(),z=n=>String(n).padStart(2,'0');return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`};
+let data={student:'',className:'',workDate:today(),questions:['','']};
+try{const previous=JSON.parse(localStorage.getItem(STORAGE)||'null');if(previous&&Array.isArray(previous.questions))data={student:previous.student||'',className:previous.className||'',workDate:previous.workDate||today(),questions:previous.questions.length?previous.questions.map(x=>String(x||'')):['','']}}catch(_e){}
+student.value=data.student;className.value=data.className;workDate.value=data.workDate;
+function persist(){data.student=student.value;data.className=className.value;data.workDate=workDate.value;try{localStorage.setItem(STORAGE,JSON.stringify(data))}catch(_e){}}
+function resize(el){el.style.height='auto';el.style.height=Math.max(74,el.scrollHeight+2)+'px'}
+function render(){list.innerHTML='';data.questions.forEach((q,i)=>{const card=document.createElement('div');card.className='question';const header=document.createElement('div');header.className='q-title';const name=document.createElement('span');name.textContent=`Câu hỏi ${i+1}`;const hint=document.createElement('small');hint.textContent='Con tự đặt câu hỏi';header.append(name,hint);const area=document.createElement('textarea');area.rows=2;area.placeholder='Nhập câu hỏi của con tại đây...';area.setAttribute('aria-label',`Câu hỏi ${i+1}`);area.value=q;area.addEventListener('input',()=>{data.questions[i]=area.value;resize(area);persist()});card.append(header,area);list.append(card);requestAnimationFrame(()=>resize(area))});removeBtn.disabled=data.questions.length<=1;}
+[student,className,workDate].forEach(e=>e.addEventListener('input',persist));
+addBtn.addEventListener('click',()=>{data.questions.push('');render();persist();const last=list.querySelector('.question:last-child textarea');last?.focus()});
+removeBtn.addEventListener('click',()=>{if(data.questions.length<=1)return;const last=data.questions.at(-1);if(last.trim()&&!confirm('Ô câu hỏi cuối đang có nội dung. Anh/chị có muốn xóa ô này không?'))return;data.questions.pop();render();persist()});
+function rounded(ctx,x,y,w,h,r,fill,stroke,lw=1){ctx.beginPath();ctx.roundRect(x,y,w,h,r);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.lineWidth=lw;ctx.strokeStyle=stroke;ctx.stroke()}}
+function wrap(ctx,text,maxWidth){const lines=[];for(const paragraph of String(text).split('\n')){if(!paragraph){lines.push('');continue}let line='';for(const word of paragraph.split(/\s+/)){const next=line?line+' '+word:word;if(ctx.measureText(next).width<=maxWidth||!line){line=next}else{lines.push(line);line=word}}lines.push(line)}return lines}
+function textLines(ctx,text,x,y,maxWidth,lineHeight,color='#20344b'){ctx.fillStyle=color;const lines=wrap(ctx,text,maxWidth);for(const line of lines){ctx.fillText(line,x,y);y+=lineHeight}return y}
+function drawRich(ctx,segments,x,y,maxWidth,lineHeight){let cx=x,cy=y;for(const [text,color,bg] of segments){for(const part of text.split(/(\s+)/)){if(!part)continue;ctx.font=bg?'bold 27px Arial, sans-serif':'27px Arial, sans-serif';const width=ctx.measureText(part).width;if(cx+width>x+maxWidth&&cx>x&&!/^\s+$/.test(part)){cx=x;cy+=lineHeight}if(/^\s+$/.test(part)&&cx===x)continue;if(bg&&!/^\s+$/.test(part)){rounded(ctx,cx-2,cy-29,width+4,35,5,bg)}ctx.fillStyle=color;ctx.fillText(part,cx,cy);cx+=width}}return cy+lineHeight}
+function drawRobot(ctx,x,y,s=1){ctx.save();ctx.translate(x,y);ctx.scale(s,s);ctx.fillStyle='#dbe7f6';ctx.beginPath();ctx.ellipse(100,210,68,10,0,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#6e9fce';ctx.lineWidth=7;ctx.beginPath();ctx.moveTo(100,49);ctx.lineTo(100,21);ctx.stroke();ctx.fillStyle='#f4b95d';ctx.beginPath();ctx.arc(100,19,11,0,Math.PI*2);ctx.fill();rounded(ctx,24,50,152,117,39,'#91bce7','#6e9fce',4);rounded(ctx,36,62,128,88,26,'#faffff');ctx.fillStyle='#315783';for(const a of [72,128]){ctx.beginPath();ctx.ellipse(a,104,9,13,0,0,Math.PI*2);ctx.fill()}ctx.strokeStyle='#315783';ctx.lineWidth=4;ctx.beginPath();ctx.arc(100,116,15,.22,Math.PI-.22);ctx.stroke();rounded(ctx,57,168,86,52,20,'#93bfe9','#6e9fce',4);rounded(ctx,79,178,42,22,9,'#faffff');ctx.restore()}
+function measureRich(ctx,segments,maxWidth,lineHeight){let x=0,rows=1;for(const [text,,bg] of segments){for(const part of text.split(/(\s+)/)){if(!part)continue;ctx.font=bg?'bold 27px Arial, sans-serif':'27px Arial, sans-serif';const w=ctx.measureText(part).width;if(x+w>maxWidth&&x>0&&!/^\s+$/.test(part)){x=0;rows++}if(/^\s+$/.test(part)&&x===0)continue;x+=w}}return rows*lineHeight}
+function slug(str){return String(str).trim().replace(/[\\/:*?"<>|]/g,'').replace(/\s+/g,'_').slice(0,90)||'Khong_ro'}
+async function exportPNG(){persist();if(!student.value.trim()||!className.value.trim()){alert('Con cần nhập đầy đủ Họ và tên học sinh và Lớp trước khi tải bài làm.');(!student.value.trim()?student:className).focus();return}if(data.questions.filter(x=>x.trim()).length<2){alert('Con cần viết ít nhất 2 câu hỏi trước khi tải bài làm.');return}
+const W=1300,P=75,C=W-2*P,ctx0=document.createElement('canvas').getContext('2d');ctx0.font='27px Arial, sans-serif';
+const segments=[['Trường em sử dụng một robot AI để hỗ trợ học sinh. Robot có thể ','#20344b',null],['hướng dẫn bài học bằng nhiều ngôn ngữ','#167044','#e5f7e9'],[', ','#20344b',null],['giúp các bạn ở nước ngoài cùng tham gia hoạt động trực tuyến','#167044','#e5f7e9'],[' và ','#20344b',null],['nhắc nhở tắt các thiết bị điện khi không sử dụng','#167044','#e5f7e9'],['. Tuy nhiên, robot ','#20344b',null],['chỉ hiểu một số ngôn ngữ','#b6293a','#ffe7e9'],[' và ','#20344b',null],['đôi khi không nhận ra lớp học đã hết người','#b6293a','#ffe7e9'],['.','#20344b',null]];
+const scenarioWidth=C-250-48;const scenarioTextHeight=measureRich(ctx0,segments,scenarioWidth,44);const scenarioHeight=Math.max(300,scenarioTextHeight+65);
+ctx0.font='26px Arial, sans-serif';const questionHeights=data.questions.map(q=>Math.max(112,wrap(ctx0,q.trim()||'(Chưa nhập câu hỏi)',C-80).length*39+54));
+const H=340+scenarioHeight+155+questionHeights.reduce((a,b)=>a+b+20,0)+225;
+const canvas=document.createElement('canvas');const scale=1.5;canvas.width=W*scale;canvas.height=H*scale;const ctx=canvas.getContext('2d');ctx.scale(scale,scale);ctx.textBaseline='alphabetic';ctx.fillStyle='#fff';ctx.fillRect(0,0,W,H);ctx.fillStyle='#edf5ff';ctx.fillRect(0,0,W,215);ctx.fillStyle='#486b9a';ctx.font='bold 20px Arial, sans-serif';ctx.fillText('AI KHỐI 4  ·  TIẾT 1  ·  HOẠT ĐỘNG 2',P,57);ctx.fillStyle='#17365e';ctx.font='bold 49px Arial, sans-serif';ctx.fillText('EM MUỐN HỎI ĐIỀU GÌ?',P,118);ctx.font='23px Arial, sans-serif';ctx.fillStyle='#506d8c';ctx.fillText('Tính toàn diện · Toàn cầu hóa · Phát triển bền vững',P,158);ctx.font='19px Arial, sans-serif';ctx.fillText('Thiết kế: Hoangntm2 - VSC Tih Times City',P,188);
+let y=255;ctx.font='bold 23px Arial, sans-serif';ctx.fillStyle='#20344b';ctx.fillText('Họ tên: '+student.value.trim(),P,y);ctx.fillText('Lớp: '+className.value.trim(),650,y);ctx.font='21px Arial, sans-serif';ctx.fillStyle='#53667b';ctx.fillText('Ngày làm bài: '+(workDate.value?workDate.value.split('-').reverse().join('/'):'—'),P,y+38);y+=88;
+ctx.fillStyle='#17365e';ctx.font='bold 30px Arial, sans-serif';ctx.fillText('1. Tình huống khám phá',P,y);y+=23;
+rounded(ctx,P,y,C,scenarioHeight,22,'#fcfeff','#dce8ef',2);drawRobot(ctx,P+C-228,y+30,.95);ctx.font='27px Arial, sans-serif';drawRich(ctx,segments,P+27,y+51,scenarioWidth,44);y+=scenarioHeight+62;
+ctx.fillStyle='#17365e';ctx.font='bold 30px Arial, sans-serif';ctx.fillText('2. Nhiệm vụ học tập',P,y);y+=43;ctx.fillStyle='#33475f';ctx.font='25px Arial, sans-serif';ctx.fillText('Đọc tình huống và đặt ít nhất 2 câu hỏi về những điều con muốn tìm hiểu thêm.',P,y);y+=40;
+ctx.font='22px Arial, sans-serif';ctx.fillStyle='#85611f';ctx.fillText('Gợi ý: Vì sao...?   ·   Làm thế nào...?   ·   Điều gì sẽ xảy ra nếu...?',P,y);y+=45;
+for(let i=0;i<data.questions.length;i++){const h=questionHeights[i];rounded(ctx,P,y,C,h,16,'#fbfdff','#dce6ef',2);ctx.fillStyle='#285a9a';ctx.font='bold 23px Arial, sans-serif';ctx.fillText('Câu hỏi '+(i+1),P+24,y+36);ctx.fillStyle='#20344b';ctx.font='26px Arial, sans-serif';textLines(ctx,data.questions[i].trim()||'(Chưa nhập câu hỏi)',P+24,y+77,C-50,39);y+=h+20}
+ctx.strokeStyle='#e1e9f2';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(P,y+12);ctx.lineTo(P+C,y+12);ctx.stroke();ctx.font='18px Arial, sans-serif';ctx.fillStyle='#768ba4';ctx.fillText('Thiết kế: Hoangntm2 - VSC Tih Times City',P,y+48);
+try{const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw Error('Không thể tạo ảnh');const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`${slug(className.value)}_${slug(student.value)}_Em_muon_hoi_dieu_gi.png`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500)}catch(err){alert('Chưa thể xuất ảnh PNG trên trình duyệt này. Vui lòng thử Chrome hoặc Edge.');console.error(err)}
+}
+document.getElementById('downloadBtn').addEventListener('click',exportPNG);render();
+})();
+</script>
+</body>
+</html>
